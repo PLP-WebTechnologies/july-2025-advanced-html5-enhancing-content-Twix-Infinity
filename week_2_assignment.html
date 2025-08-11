@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Week 2 - Enhanced HTML Elements</title>
+        </head>
+
+        <body>
+            <h1><b>Definition List</b></h1>
+            <dl>
+                <dt>A Fruit:</dt>
+                    <dd>The mature ovary of a flowering plant, containing seeds.</dd>
+                <br>
+                <dt>A Vegetable:</dt>
+                    <dd>Any other edible part of the plant like roots, stems, or leaves.</dd>
+            </dl>
+
+            <h1><b>Nested List</b></h2>
+            <ul>
+                <li><u>Fruits</u>
+                    <ol>
+                        <li>Pawpaw</li>
+                        <li>Apple
+                            <ol type = "i">
+                                <li>Red Apple</li>
+                                <li>Green Apple</li>
+                            </ol>
+                        </li>
+                        <li>Pineapple</li>
+                    </ol>
+                </li>
+                <br>
+                <li><u>Vegetables</u>
+                    <ol>
+                        <li>Celery</li>
+                        <li>Lettus</li>
+                        <li>Onion</li>
+                    </ol>
+                </li>
+            </ul> 
+
+            <h1><b>Table</b></h1>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr> 
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Height</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Abby</td>
+                        <td>23</td>
+                        <td>5'5</td>
+                    </tr>
+                    <tr>
+                        <td>Jake</td>
+                        <td>30</td>
+                        <td>6'1</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h1>Form</h1>
+            <form action="location" method="how" enctype="multipart/form-data">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <br>
+                <br>
+                <label for="bio">Bio:</label>
+                <textarea name="bio" id="bio" rows="4" cols="50"></textarea>
+                <br>
+                <br>
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="">--Select Country--</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>  
+                </select>
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+
+            <h1><b>Image</b></h1>
+            <img src = "https://images.pexels.com/photos/13008657/pexels-photo-13008657.jpeg" 
+            alt = "Image of the sea from aerial view." 
+            width = "500" height="800">
+            <br>
+
+            <h1><b>Video</b></h1>
+            <video controls width="800" height="500">
+                <source src = "https://videos.pexels.com/video-files/32711885/13945500_2560_1440_30fps.mp4" 
+                type = "video/mp4"
+                alt = "Your browser does not support video playback.">
+            </video>
+            <br>
+
+            <h1>Audio</h1>
+            <audio controls>
+                <source src = "no-copyright-music-385474.mp3" 
+                type="audio/mpeg"
+                alt = "Your browser does not support audio playback.">
+            </audio>
+        </body>
+    </html>
